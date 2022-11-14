@@ -87,7 +87,7 @@ class RecursiveCallException(Exception):
     pass
 
 
-def dummy_memoize_by_id(func):
+def memoize_by_id(func):
     def wrapper(*args, **kwargs):
         return func(*args, **kwargs)
 
