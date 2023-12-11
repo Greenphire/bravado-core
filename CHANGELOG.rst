@@ -2,6 +2,10 @@ Changelog
 =========
 .. Make sure to link Issue and PR information as `(PR|Issue) #xxx`_ and with a link at the bottom of the document
 
+5.17.3 (2023-12-11)
+-------------------
+- CCSE-2024: Remove json-schema.org dependency - `PR #392`_
+
 5.17.2 (2022-11-14)
 -------------------
 - Remove memoize_by_id for caching - `PR #392`_
