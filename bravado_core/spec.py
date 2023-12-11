@@ -31,6 +31,7 @@ from bravado_core import version as _version
 from bravado_core.exception import SwaggerSchemaError
 from bravado_core.exception import SwaggerValidationError
 from bravado_core.formatter import return_true_wrapper
+from bravado_core.json_schema_constants import LOCAL_JSON_SCHEMA_STORE
 from bravado_core.model import _from_pickleable_representation
 from bravado_core.model import _to_pickleable_representation
 from bravado_core.model import Model
@@ -160,6 +161,7 @@ class Spec(object):
             base_uri=self.origin_url or '',
             referrer=self.spec_dict,
             handlers=self.get_ref_handlers(),
+            store=LOCAL_JSON_SCHEMA_STORE
         )
 
     def is_equal(self, other):
