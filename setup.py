@@ -17,7 +17,7 @@ install_requires = [
     'requests',
     "simplejson",
     "six",
-    "swagger-spec-validator>=2.0.1",
+    "swagger-spec-validator@git+ssh://git@github.com/jnguyen-gp/swagger_spec_validator.git@feature/CCSE-2024_remove_json_schema_org_dependency",
     "pytz",
     "msgpack>=0.5.2",
 ]
