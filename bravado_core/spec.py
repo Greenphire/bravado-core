@@ -19,6 +19,7 @@ from six.moves.urllib.parse import urlparse
 from six.moves.urllib.parse import urlunparse
 from six.moves.urllib.request import url2pathname
 from swagger_spec_validator import validator20
+from swagger_spec_validator.json_schema_constants import LOCAL_JSON_SCHEMA_STORE
 from swagger_spec_validator.ref_validators import in_scope
 
 try:
@@ -31,7 +32,6 @@ from bravado_core import version as _version
 from bravado_core.exception import SwaggerSchemaError
 from bravado_core.exception import SwaggerValidationError
 from bravado_core.formatter import return_true_wrapper
-from bravado_core.json_schema_constants import LOCAL_JSON_SCHEMA_STORE
 from bravado_core.model import _from_pickleable_representation
 from bravado_core.model import _to_pickleable_representation
 from bravado_core.model import Model
