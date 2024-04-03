@@ -17,8 +17,7 @@ install_requires = [
     'requests',
     "simplejson",
     "six",
-    # "swagger-spec-validator>=2.0.1",
-    "swagger-spec-validator@git+ssh://git@github.com/Greenphire/swagger-spec-validator.git@feature/CCSE-2024_cache_json_schema_links",
+    "swagger-spec-validator@git+ssh://git@github.com/Greenphire/swagger_spec_validator.git@feature/CCSE-2024_cache_json_schema_links",
     "pytz",
     "msgpack>=0.5.2",
 ]
