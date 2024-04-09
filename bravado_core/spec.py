@@ -157,24 +157,6 @@ class Spec(object):
     @cached_property
     def resolver(self):
         # type: () -> RefResolver
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info('AYOOOOOO')
-        log.info(LOCAL_JSON_SCHEMA_STORE)
-        assert LOCAL_JSON_SCHEMA_STORE['https://json-schema.org/draft/2019-09/links'] == {}
         return RefResolver(
             base_uri=self.origin_url or '',
             referrer=self.spec_dict,
