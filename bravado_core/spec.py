@@ -20,6 +20,7 @@ from six.moves.urllib.parse import urlunparse
 from six.moves.urllib.request import url2pathname
 from swagger_spec_validator import validator20
 from swagger_spec_validator.ref_validators import in_scope
+from swagger_spec_validator.json_schema_constants import LOCAL_JSON_SCHEMA_STORE
 
 try:
     from yaml import CSafeLoader as SafeLoader
@@ -160,6 +161,7 @@ class Spec(object):
             base_uri=self.origin_url or '',
             referrer=self.spec_dict,
             handlers=self.get_ref_handlers(),
+            store=LOCAL_JSON_SCHEMA_STORE,
         )
 
     def is_equal(self, other):
